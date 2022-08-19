@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //print the sum of an array
+        
+    //     let sum =0;
+    // for (var i=0;i<array.length;i++){
+    //     sum = sum+array[i];
+    // }
+    // console.log(sum);
+
+    //same using reduce // am not giving any accu or initial value
+    let array = [1,2,3,4,5,6,7,8,9]
+
+    let result = array.reduce((initial, curr)=>{
+        return initial+curr;
+    })
+    console.log(result);
+
+    //salary 25000 / minus all the expenses from the total salary
+
+    const salary = 25000;
+    const expenses = [1800, 2000, 3000, 5000, 2000];
+
+    let remain = expenses.reduce((accu,curr) =>
+     accu - curr, salary
+    )
+console.log(remain);
+
+let string= "guvi";
+let str = string.split("").join(" ")
+console.log(str);
+
+    </script>
+</body>
+</html>

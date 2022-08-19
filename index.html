@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array indexes => multiply by 2
+
+        //for loop
+
+        var array = [1,2,3,4,5];
+        let result=[];
+        for(let i=0; i<array.length; i++){
+            let mulvalue = array[i]*2;
+            result.push(mulvalue);
+        }
+        console.log(result);
+
+        //map method:
+        
+        let res = array.map((index)=>{ 
+            return index*2
+        });
+        console.log(res);
+
+        //marks increased by 20 to all.
+
+        let student =[
+        {name:"Ajay", marks:390},
+        {name:"Arun", marks:480},
+        {name:"Aditi", marks:280},
+        {name:"Abhi", marks:450},
+        {name:"Anushya", marks:320}
+        ];
+
+        let result1 = student.map((studentdata)=>{
+           studentdata.marks+=20
+            return studentdata;
+        })
+        console.log(result1);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Map, Reduce ,Filter => ES6 
+functions, array methods(oit will be used sometimes in array of objects.
+map(), reduce(), filter()
+
+Map:
+map always takes function as an argument.
+this method will create a new array.
+it doesnt change the length of the array.
+it works on each and every index of an array.
+
+syntax:
+let variable name = array.map(function){return}
+we can use any function, but for code simplification purpose we all go for arow function.(developers)
+
+filter:
+if u want to extract some particular data from an array then we can go for filter.
+it always takes function as an argument.
+it works on each and every index of an array.
+it returns a same indexes in an array but with different length.
+it should always have condition.
+
+Reduce :
+it always takes function as an argument.
+it works on each and every index of an array.
+it helps to reduce the array into a single element.
+reduce always have 2 parametres inside the function
+accumulator, current value
+
+
+
+
+
+
